@@ -3,6 +3,11 @@ package com.epam.training.darya_raicheva.conditions_and_cycles;
 import java.io.IOException;
 import java.util.Scanner;
 
+// напишите простую программу, которая:
+//запрашивает количество незнакомцев, с которыми нужно встретиться
+//построчно читает имена незнакомцев
+//построчно выводит: "Hello, (имя незнакомца)" для каждого незнакомца.
+
 public class MeetStrangers {
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);

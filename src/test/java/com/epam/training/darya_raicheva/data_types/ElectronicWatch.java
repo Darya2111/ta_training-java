@@ -2,6 +2,10 @@ package com.epam.training.darya_raicheva.data_types;
 
 import java.util.Scanner;
 
+// напишите программу, которая получает на вход целое число.
+// Это число представляет собой текущее суточное время как количество прошедших с полнуочи секунд.
+// Затем программа должна напечатать вывод экрана электронных часов для этого времени
+
 public class ElectronicWatch {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
