@@ -17,9 +17,15 @@ public class LocalMaximaRemove {
         System.out.println(Arrays.toString(removeLocalMaxima(array)));
     }
     public static int[] removeLocalMaxima(int[] array){
-
-        //put your code here
-
-        throw new UnsupportedOperationException();
+        for (int i=0; i<array.length; i++)
+            if(i==0 || array[i-1]<array[i] && i==array.length-1 || array[i+1]<array[i])
+            {
+                int[] b = new int[array.length-1];
+                System.arraycopy(array,0,b,0,i);
+                if(i<array.length-1)
+                    System.arraycopy(array,i+1,b,i,array.length-i-1);
+                array=b.clone();
+            }
+        return array;
     }
 }
